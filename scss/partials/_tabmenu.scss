@@ -1,0 +1,30 @@
+.nav-tabs {
+  display: none
+}
+
+@media screen and (min-width: $mobile-width) {
+  .nav-tabs{
+    display: flex;
+  }
+   
+  .accordion-item .collapse{
+    display: block;
+  }
+
+  .accordion-header {
+    display: none;
+  }
+
+  .collapse{
+    display: block;
+  }
+}
+
+
+@media screen and(max-width: $mobile-width) {
+  
+.tab-content>.tab-pane {
+  display: block !important;
+  opacity: 1;
+}
+}

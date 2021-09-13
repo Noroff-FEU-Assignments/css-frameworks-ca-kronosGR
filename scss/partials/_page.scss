@@ -1,0 +1,18 @@
+body {
+	background-color: getColor(gray-light);
+	font-family: $text-font;
+	color: getColor(gray-dark);
+}
+
+header {
+	width: 85%;
+}
+
+.carousel-item > img {
+	height: 290px;
+}
+
+h1 {
+  font-family: $heading-font;
+  color: getColor(red);
+}

@@ -1,0 +1,31 @@
+.navbar-light .navbar-brand{
+  font-family: $heading-font;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  color: getColor(red);
+}
+
+.navbar-toggler{
+  border: none;
+}
+
+.nav-item:hover,
+.navbar-light .navbar-nav .nav-link.active{
+  background-color:white;
+  color: getColor(gray-dark);
+}
+
+form{
+  display: flex;
+
+  input{
+    flex-basis: 90%;
+  }
+
+  .btn {
+    background-color:getColor(red);
+    border-radius: 0;
+    border: none;
+  }
+}

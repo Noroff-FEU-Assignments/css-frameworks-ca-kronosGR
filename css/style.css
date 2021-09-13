@@ -1,3 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;1,700&display=swap");
+body {
+  background-color: #efefef;
+  font-family: "Lato", sans-serif;
+  color: #767676;
+}
+
+header {
+  width: 85%;
+}
+
+.carousel-item > img {
+  height: 290px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  color: #e92569;
+}
+
+.navbar-light .navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  color: #e92569;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.nav-item:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  background-color: white;
+  color: #767676;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form input {
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+}
+
+form .btn {
+  background-color: #e92569;
+  border-radius: 0;
+  border: none;
+}
+
 .nav-tabs {
   display: none;
 }

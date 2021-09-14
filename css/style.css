@@ -2534,11 +2534,11 @@ textarea.form-control-lg {
   height: 2em;
   margin-top: -0.25em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: #e92569;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  border: none;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -10983,6 +10983,7 @@ form .btn {
   background-color: #e92569;
   border-radius: 0;
   border: none;
+  color: white;
 }
 
 .carousel-indicators .active, .carousel-indicators .hover {

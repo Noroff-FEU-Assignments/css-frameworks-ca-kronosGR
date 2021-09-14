@@ -10940,7 +10940,9 @@ body {
 }
 
 header {
-  width: 85%;
+  background-color: #efefef;
+  width: 100%;
+  margin-top: -10px;
 }
 
 h1, .h1 {
@@ -11101,7 +11103,7 @@ form .btn {
 footer {
   margin-top: 30px !important;
   background-color: white;
-  padding: 45px;
+  padding: 25px 45px 15px 45px;
 }
 
 footer div:first-of-type {

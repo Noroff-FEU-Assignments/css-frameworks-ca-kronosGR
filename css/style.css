@@ -4856,7 +4856,7 @@ fieldset:disabled .btn {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 1.25rem;
 }
 
 .card > hr {
@@ -4871,14 +4871,14 @@ fieldset:disabled .btn {
 
 .card > .list-group:first-child {
   border-top-width: 0;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(1.25rem - 1px);
+  border-top-right-radius: calc(1.25rem - 1px);
 }
 
 .card > .list-group:last-child {
   border-bottom-width: 0;
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(1.25rem - 1px);
+  border-bottom-left-radius: calc(1.25rem - 1px);
 }
 
 .card > .card-header + .list-group,
@@ -4922,7 +4922,7 @@ fieldset:disabled .btn {
 }
 
 .card-header:first-child {
-  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  border-radius: calc(1.25rem - 1px) calc(1.25rem - 1px) 0 0;
 }
 
 .card-footer {
@@ -4932,7 +4932,7 @@ fieldset:disabled .btn {
 }
 
 .card-footer:last-child {
-  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+  border-radius: 0 0 calc(1.25rem - 1px) calc(1.25rem - 1px);
 }
 
 .card-header-tabs {
@@ -4954,7 +4954,7 @@ fieldset:disabled .btn {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  border-radius: calc(0.25rem - 1px);
+  border-radius: calc(1.25rem - 1px);
 }
 
 .card-img,
@@ -4965,14 +4965,14 @@ fieldset:disabled .btn {
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(1.25rem - 1px);
+  border-top-right-radius: calc(1.25rem - 1px);
 }
 
 .card-img,
 .card-img-bottom {
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(1.25rem - 1px);
+  border-bottom-left-radius: calc(1.25rem - 1px);
 }
 
 .card-group > .card {
@@ -5178,10 +5178,10 @@ fieldset:disabled .btn {
 .page-link {
   position: relative;
   display: block;
-  color: #0d6efd;
+  color: #e92569;
   text-decoration: none;
   background-color: #fff;
-  border: 1px solid #dee2e6;
+  border: 1px solid #e92569;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -5218,8 +5218,8 @@ fieldset:disabled .btn {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #e92569;
+  border-color: #e92569;
 }
 
 .page-item.disabled .page-link {
@@ -11133,6 +11133,45 @@ footer div:last-of-type {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+main nav {
+  margin: 25px 0;
+}
+
+.row .d-flex {
+  width: 90%;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.row .d-flex a {
+  width: 100%;
+  border-right: 30px solid #767676;
+  background-color: #e92569;
+}
+
+.card {
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .row .d-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .row .d-flex div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 22%;
+            flex: 0 0 22%;
+    margin: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

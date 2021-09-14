@@ -17,10 +17,17 @@ $colors: (
 $accordion-button-color: getColor(red);
 $accordion-bg: rgba(255, 255, 255, 0.6);
 $accordion-button-bg: white;
-$accordion-border-color:  white;
+$accordion-border-color: white;
 $accordion-button-active-bg: white;
 $accordion-button-active-color: getColor(red);
 $accordion-icon-width: 0;
 
 $nav-link-color: getColor(red);
-$nav-link-hover-color: getColor(gray-dark);      
+$nav-link-hover-color: getColor(gray-dark);
+
+$pagination-color: getColor(red);
+$pagination-active-bg: getColor(red);
+$pagination-active-border-color: getColor(red);
+$pagination-border-color: getColor(red);
+
+$card-border-radius: 1.25rem;

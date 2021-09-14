@@ -1,0 +1,33 @@
+
+main nav{
+  margin: 25px 0;
+}
+
+.row .d-flex{
+  width: 90%;
+  margin:0 auto;
+  flex-direction: column;
+
+  a{
+    width: 100%;
+    border-right: 30px solid getColor(gray-dark);
+    background-color:getColor(red);
+  }
+
+}
+
+.card{
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: $mobile-width){
+  .row .d-flex{
+    flex-direction: row;
+
+    div{      
+      flex: 0 0 22%;
+      margin: 20px;
+    }
+  }
+}

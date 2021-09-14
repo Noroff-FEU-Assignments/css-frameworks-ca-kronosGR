@@ -9,10 +9,6 @@ header {
   width: 85%;
 }
 
-.carousel-item > img {
-  height: 290px;
-}
-
 h1 {
   font-family: "Playfair Display", serif;
   color: #e92569;
@@ -51,6 +47,22 @@ form .btn {
   background-color: #e92569;
   border-radius: 0;
   border: none;
+}
+
+.carousel-indicators .active, .carousel-indicators .hover {
+  background-color: #e92569 !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 30px !important;
+  background-color: white;
+  opacity: 1;
+}
+
+.carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 270px;
 }
 
 .nav-tabs {

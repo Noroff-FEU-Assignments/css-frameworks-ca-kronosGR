@@ -1,0 +1,18 @@
+.carousel-indicators{
+  & .active, & .hover{
+    background-color:getColor(red) !important;
+  }
+}
+
+.carousel-indicators [data-bs-target]{
+  height: 30px !important;
+  background-color: white;
+  opacity: 1;
+}
+
+.carousel-item{
+  img{
+    object-fit: cover;
+    height:270px;
+  }
+}

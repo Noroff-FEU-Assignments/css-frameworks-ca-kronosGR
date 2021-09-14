@@ -13,3 +13,11 @@ $colors: (
 @function getColor($color) {
 	@return map-get($colors, $color);
 }
+
+$accordion-button-color: getColor(red);
+$accordion-bg: rgba(255, 255, 255, 0.6);
+$accordion-button-bg: white;
+$accordion-border-color:  white;
+$accordion-button-active-bg: white;
+$accordion-button-active-color: getColor(red);
+$accordion-icon-width: 0;

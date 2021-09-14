@@ -16,3 +16,12 @@
     height:290px;
   }
 }
+
+@media screen and (min-width: $mobile-width) {
+  .carousel-item{
+    img{
+      object-fit: cover;
+      height:470px;
+    }
+  }
+}

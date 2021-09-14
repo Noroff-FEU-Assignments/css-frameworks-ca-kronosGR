@@ -1,16 +1,28 @@
 footer{
   margin-top:30px !important;
   background-color: white;
-  padding: 20px;
+  padding: 45px;
 
   div:first-of-type{
     font-size: 22px;
   }
-  // display:grid;
-  // grid-template-columns: auto;
-  // grid-template-rows: 2;
-  // grid-template-areas: 
-  //   ". links ."
-  //   "email . copyright"
+   div:last-of-type{
+      flex-basis:100%;
+      display: flex;
+      justify-content:space-between;
+    }
+}
 
+@media screen and (min-width: $mobile-width){
+  footer{
+    div:first-of-type{
+      flex-basis: 35%;
+    }
+
+    div:last-of-type{
+      flex-basis:65%;
+      display: flex;
+      justify-content:space-between;
+    }
+  }
 }

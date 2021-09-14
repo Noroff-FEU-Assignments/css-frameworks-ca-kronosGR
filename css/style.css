@@ -4307,7 +4307,7 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: #e92569;
   text-decoration: none;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -4321,7 +4321,7 @@ fieldset:disabled .btn {
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #767676;
 }
 
 .nav-link.disabled {
@@ -10999,6 +10999,14 @@ form .btn {
   height: 290px;
 }
 
+@media screen and (min-width: 768px) {
+  .carousel-item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 470px;
+  }
+}
+
 .nav-tabs {
   display: none;
 }
@@ -11021,6 +11029,37 @@ form .btn {
   }
   .collapse {
     display: block;
+  }
+  .accordion-body {
+    padding: 40px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 2;
+        grid-template-rows: 2;
+        grid-template-areas: 'image text text text text text text' 'image links . . . . .';
+    grid-gap: 1rem;
+  }
+  .accordion-body p {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 6;
+    grid-area: text;
+  }
+  .accordion-body img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: image;
+    width: 300px;
+  }
+  .accordion-body div {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: links;
+    padding: 10px;
+    color: black;
   }
 }
 
@@ -11062,10 +11101,38 @@ form .btn {
 footer {
   margin-top: 30px !important;
   background-color: white;
-  padding: 20px;
+  padding: 45px;
 }
 
 footer div:first-of-type {
   font-size: 22px;
+}
+
+footer div:last-of-type {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  footer div:first-of-type {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+  }
+  footer div:last-of-type {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=style.css.map */

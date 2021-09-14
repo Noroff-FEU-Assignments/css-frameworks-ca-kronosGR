@@ -2,6 +2,10 @@
 	display: none;
 }
 
+.accordion-button{
+	font-size: 19px;
+}
+
 @media screen and (min-width: $mobile-width) {
 	.nav-tabs {
 		display: flex;
@@ -24,5 +28,32 @@
 	.tab-content > .tab-pane {
 		display: block !important;
 		opacity: 1;
+	}
+
+	.accordion-body {
+		padding: 40px;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 3;
+		grid-template-areas:
+		'text'
+		'image'
+		'links';
+		
+		justify-items: center;
+
+		p {
+			grid-area: text;
+		}
+
+		img {
+			grid-area: image;
+		}
+
+		div {
+			grid-area: links;
+			padding:	10px;
+			color: black;
+		}
 	}
 }

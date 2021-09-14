@@ -1,0 +1,16 @@
+footer{
+  margin-top:30px !important;
+  background-color: white;
+  padding: 20px;
+
+  div:first-of-type{
+    font-size: 22px;
+  }
+  // display:grid;
+  // grid-template-columns: auto;
+  // grid-template-rows: 2;
+  // grid-template-areas: 
+  //   ". links ."
+  //   "email . copyright"
+
+}

@@ -4,7 +4,7 @@ $text-font: 'Lato', sans-serif;
 
 $colors: (
 	black: #0a0a0a,
-	gray: #c7c7c7,
+	gray: #e5e5e5,
 	gray-light: #efefef,
 	gray-dark: #767676,
 	red: #e92569,
@@ -13,6 +13,8 @@ $colors: (
 @function getColor($color) {
 	@return map-get($colors, $color);
 }
+
+$gray-100: getColor(gray-light);
 
 $accordion-button-color: getColor(red);
 $accordion-bg: rgba(255, 255, 255, 0.6);
@@ -31,3 +33,6 @@ $pagination-active-border-color: getColor(red);
 $pagination-border-color: getColor(red);
 
 $card-border-radius: 1.25rem;
+
+$form-check-input-width:   2em;
+$input-border-width: 0;

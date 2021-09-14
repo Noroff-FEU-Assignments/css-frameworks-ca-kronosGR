@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | CSS-Frameworks Georgios Katsanakis</title>
+  <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="mx-auto  mt-2 mb-2">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand" href="/">The YAY Company</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-expanded="false" aria-controls="navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a href="/" class="nav-link px-4">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/news.html" class="nav-link active px-4">News</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact.html" class="nav-link px-4">Contact</a>
+          </li>
+        </ul>
+        <form class="mt-md-0 mb-md-0 mt-4 mb-2">
+          <input class="form-control align-middle" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-primary" type="submit">Go</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="row d-flex mx-5">
+      <div class="col">
+        <div class="row my-3">
+          <div class="col-1">
+            <img src="icons/envelope.png" alt="email">
+          </div>
+          <div class="col-10">
+            hello@yay.com
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-1">
+            <img src="icons/phone.png" alt="phone">
+          </div>
+          <div class="col-10">
+            123 456 7890
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-1">
+            <img src="icons/marker.png" alt="address">
+          </div>
+          <div class="col-10">
+            123 Some street<br>
+            Somewhere <br>
+            Some City <br>
+            10000
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 order-md-first">
+        <h1>Submit your details</h1>
+        <form class="row bg-light p-4" >
+          <div class="form-group w-100">
+            <label for="fullname" class="form-label">Name</label>
+            <input type="text" class="form-control" id="fullname" name="fullname">
+          </div>
+          <div class="form-group w-100">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>          
+          <div class="form-group w-100">
+            <label for="website" class="form-label">Website</label>
+            <div>
+              <span class="input-group-text w-auto" id="website-extra">https://</span>
+              <input type="website" class="form-control" id="website" name="website">
+            </div>
+          </div>     
+          <div class="form-group w-100">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+          </div>
+          <div class="form-check m-3">
+            <input class="form-check-input" type="checkbox" name="terms" id="terms" checked>
+            <label class="form-check-label" for="terms">Allow us to sell your personal details
+              to whomever we want</label>
+          </div>
+          <button type="submit" class="btn btn-primary disabled m-2">Submit</button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="row footer">
+    <div class="col-md text-center text-md-start">
+      <i class="lni lni-vimeo"></i>
+      <i class="lni lni-youtube"></i>
+    </div>
+    <div class="col-md text-center text-md-right">
+      <p>hello@yay.com</p>
+      <p>Copyright &copy 2021</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

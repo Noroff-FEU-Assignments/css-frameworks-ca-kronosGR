@@ -11034,6 +11034,7 @@ form .btn {
     display: block;
   }
   .accordion-body {
+    background-color: white !important;
     padding: 40px;
     display: -ms-grid;
     display: grid;
@@ -11071,6 +11072,9 @@ form .btn {
   .tab-content > .tab-pane {
     display: block !important;
     opacity: 1;
+  }
+  .accordion-button:not(.collapsed) {
+    border-bottom: 2px solid #e92569;
   }
   .accordion-body {
     padding: 40px;
